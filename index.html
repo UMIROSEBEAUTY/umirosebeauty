@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMIROSE | Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="umirosepictures/Brown Logo.png">
+
+  <style>
+    :root {
+      --bg: #f6f1ec;
+      --rose: #eacdc4;
+      --nude: #e8d7cf;
+      --text: #3a3a3a;
+      --accent: #9e8374;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      background-image: url(umirosepictures/umi\ bg\ 3.jpeg);
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+
+    .container {
+      animation: fadeIn 1.5s ease-out forwards;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 2rem;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: slideIn 1.2s ease forwards;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: var(--text);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 1s;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--rose);
+      color: var(--text);
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: background 0.3s;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 1.5s;
+    }
+
+    .cta:hover {
+      background: var(--nude);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .Logo img {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      margin: 0 auto 20px;
+      display: block;
+      border-radius: 200px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .cta {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="Logo">
+      <img src="umirosepictures/Umi Logo2 (1).png" alt="UMIROSE Logo">
+    </div>
+    <p>For the muse in you. Always curated with love.</p>
+    <h1>COMING SOON</h1>
+    <a href="https://www.instagram.com/umirosebabe?igsh=NHlzNXJ6ajBpOXRz&utm_source=qr" class="cta" target="_blank">Follow us on Instagram</a>
+  </div>
+</body>
+</html>
